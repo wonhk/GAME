@@ -1,12 +1,49 @@
-import RSP
+def play_one():
 
-num = input('1.가위, 2.바위, 3.보! : ')
+    sentences = ["당신은 먹을걸 구하기 위해 집을 나섰습니다.", "하루종일 채집과 사냥을 하며 먹을것을 풍족하게 구했습니다.",
+    "볼 일이 끝나고 집으로 가려는 순간", "당신은 어떤 괴한과 마주칩니다.","그 괴한은 칼이나 총 등 위험한 흉기를 들고 있지는 않았지만",
+    "주먹을 치켜세우며 한가지 제안을 합니다", "괴한 : 이봐... 나랑 같이 게임하나 하지 않겠나...?","나 : 어떤 게임을 하자는거요..?",
+    "괴한 : 가위바위보를 해서 나를 이기면 그냥 지나가게 해주지", "괴한 : 하지만 비기거나 진다면 넌 그자리에서", "괴한 : 니가 가지고 있는 모든 음식과 물건들을 뺏기게 될거야..."
+    , "괴한 : 자.. 어떻게 하겠는가?"]
 
-if num == '1':
-     RSP.play_rock_paper_scissors("가위")
+    for sentence in sentences:
+        print(sentence, end="\n")
+        input('>>>')
 
-elif num == '2':
-    RSP.play_rock_paper_scissors("바위")
+    while True:
+        num = input('1. 내가 왜 그런짓을 해야하지? 얼른 비켜! 2. 좋아 얼른 시작하지... 당신의 선택은? : ')
 
-elif num == '3':
-    Rs
+        if num == '1':
+            sentences = ["괴한 : ㅎㅎ 너가 지금 나에게 대들 수 있는 입장이라 생각하나??", "(괴한 주변에서 으르렁 소리와 함께 짐승들이 몰려온다).", 
+            "괴한 : 하기 싫으면 어쩔 수 없지 죽어야지 뭐.", "밝게 빛나는 둥근 달 아래", "괴한은 괴상한 울음소리와 함께 주변 짐승들 처럼 모습이 변하였고"
+            ,"그 자리에 있던 모든 짐승들이 달려들어 물어뜯기 시작했다", "나는 속수무책으로 당할 수 밖에 없었고 그 상태로 의식을 잃었다.",]
+
+        for sentence in sentences:
+            print(sentence, end="\n")
+            input()
+            continue
+
+        elif num =='2'
+            sentences = ["괴한 : 좋아! 그렇게 나와야지!", "그러자 괴한이 주변서 어슬렁거리던 짐승들을 불러모은다.","" 
+            "괴한 : 하기 싫으면 어쩔 수 없지 죽어야지 뭐.", "밝게 빛나는 둥근 달 아래", "괴한은 괴상한 울음소리와 함께 주변 짐승들 처럼 모습이 변하였고"
+            ,"그 자리에 있던 모든 짐승들이 달려들어 물어뜯기 시작했다", "나는 속수무책으로 당할 수 밖에 없었고 그 상태로 의식을 잃었다.",]
+
+        for sentence in sentences:
+            print(sentence, end="\n")
+            input()
+        
+
+
+    import RSP
+
+    num = input('1.가위, 2.바위, 3.보! : ')
+
+    if num == '1':
+         RSP.play_rock_paper_scissors("가위")
+
+    elif num == '2':
+        RSP.play_rock_paper_scissors("바위")
+
+    elif num == '3':
+        RSP.play_rock_paper_scissors("보")
+play_one()
