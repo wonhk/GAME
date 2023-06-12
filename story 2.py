@@ -1,1 +1,2 @@
-import DICE
+def play_two
+
