@@ -1,4 +1,3 @@
-import story_1
 import random
 
 sentences = ["확률형 게임에 오신걸 환영합니다", "시작하기전에 간단히 설명 드리겠습니다.",
@@ -11,6 +10,7 @@ for sentence in sentences:
     input('>>>')
 
 
+import story_1
 
 def check_random_number():
     number = random.choice([1, 2, 3])  # 1, 2, 3 중에서 랜덤으로 선택
