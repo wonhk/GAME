@@ -10,17 +10,25 @@ for sentence in sentences:
     input('>>>')
 
 
-import story_1
+
 
 def check_random_number():
     number = random.choice([1, 2, 3])  # 1, 2, 3 중에서 랜덤으로 선택
+
     if number == 1:
         print('1번 스토리가 선택되었습니다')
+        import story_1
         story_1.play_one()
+    
     elif number == 2:
-        story_1.play_one()
-    else:
-        story_1.play_one()
+        print('2번 스토리가 선택되었습니다')
+        import story_2
+        story_2.play_two()
+
+
 
 check_random_number()
+
+
+
 
